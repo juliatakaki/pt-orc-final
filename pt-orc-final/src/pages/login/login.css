@@ -1,0 +1,82 @@
+
+.fundo {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url(../../images/fundoDoLogin.png);
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+}
+
+.caixaLogin{
+    background-color: #d9d9d9;
+    padding: 2rem;
+    border-radius: 2rem;
+    width: 25%;
+
+}
+
+.hamburguer{
+    height: 100px;
+    width: 100px;
+    padding: 0 50%0 50%;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../images/burguer.png);
+    background-size: 150vh;
+    background-position: center;
+}
+
+h2 {
+    color: #2b6d4d;
+}
+
+.email{
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 90px;
+    box-sizing: border-box;
+    border-color: #e3a41f;
+    background-color: #e3a41f;
+    color: white;
+}
+
+.senha {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 90px;
+    box-sizing: border-box;
+    border-color: #e3a41f;
+    background-color: #e3a41f;
+}
+
+input::placeholder{
+    color: #d9d9d9;
+    font-weight: 600;
+}
+
+.login{
+    width: 100%;
+    border-radius: 50px;
+    background-color: #2b6d4d;
+    color: #d9d9d9;
+    padding: 0.5rem;
+}
+
+.login:hover{
+    background-color: #e3a41f;
+    color: #d9d9d9;
+    transition: 0.6s ease;
+}
+
+p{
+    padding-top: 1rem;
+}
+
+.cadastro{
+    text-decoration: none;
+    color: #2b6d4d;
+    font-weight: 500;
+}

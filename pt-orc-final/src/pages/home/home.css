@@ -1,0 +1,7 @@
+
+.logo{
+    width: 100%;
+    background-image: url(../../images/fundo.png);
+    height: 100vh;
+    background-size: cover;
+}
