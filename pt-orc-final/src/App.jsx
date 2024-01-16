@@ -8,7 +8,7 @@ import Home from './pages/home/home'
 import Navbar from './components/Navbar/navbar'
 import Menu from './pages/Menu'
 
-function app(){
+function App(){
 
   return(
     <BrowserRouter>
@@ -22,4 +22,4 @@ function app(){
   )
 }
 
-export default app
+export default App
