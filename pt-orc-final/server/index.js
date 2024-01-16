@@ -18,7 +18,7 @@ app.post("/login", (req,res) => {
                 res.json("Success")
             } else {
                 res.json("the password is incorrect")
-            }
+            }           
         } else {
             res.json("No record existed")
         }
