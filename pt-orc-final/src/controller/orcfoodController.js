@@ -1,4 +1,4 @@
-import Orcfood from '../model/orcfoodModel.js';
+import Orcfood from '../models/orcfoodModel'
 
 class OrcfoodController {
   async getAllOrcfoods(req, res) {

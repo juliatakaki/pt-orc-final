@@ -18,7 +18,7 @@ export default function Signup(){
         .then(result => {console.log(result)
         navigate('/login')
         })
-        .catch(err => console.log(err))
+        .catch(err => console.log("erro aqui"))
     }
 
 

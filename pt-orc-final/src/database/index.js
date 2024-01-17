@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import mongoose from 'mongoose';
 
-const connectionURL = process.env.CONNECTION_URL || 'mongodb://127.0.0.1:27017/cliente';
+const connectionURL = process.env.CONNECTION_URL || 'mongodb://<username>:<password>@<host>:<port>/<database>';
 class Database {
     constructor() {
         this.connection = mongoose.connect(

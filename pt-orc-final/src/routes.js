@@ -1,10 +1,20 @@
 import { Router } from 'express';
+const cors = require('cors');
+const express = require("express");
 
-import orcfoodController from './controller/orcfoodController.js';
+import OrcfoodController from './controller/orcfoodController.js';
+import LoginController from './controller/loginController.js';
+import registerController from './controller/registerController.js';
 
 const routes = new Router();
+const app = express();
+app.use(express.json());
+app.use(cors());
 
-routes.get('/orcfoods', orcfoodController.getAllOrcfoods);
-routes.get("/orcfoods/search", orcfoodController.searchOrcfoodsByCategory);
+app.routes.get('/orcfoods', OrcfoodController.getAllOrcfoods);
+app.routes.get("/orcfoods/search", OrcfoodController.searchOrcfoodsByCategory);
+app.routes.post("/login", LoginController.login)
+app.routes.post("/register", registerController.register)
+
 
 export default routes;

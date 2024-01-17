@@ -7,7 +7,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://127.0.0.1:27017/cliente");
+mongoose.connect("mongodb://127.0.0.1:27017/cliente")
+  .then(() => {
+    console.log("Connected to Database");
+  })
+  .catch((err) => {
+    console.error("Error connecting to database:", err);
+  });
+
 
 app.post("/login", (req,res) => {
     const {email, senha} = req.body;
