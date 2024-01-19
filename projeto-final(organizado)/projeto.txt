@@ -1,0 +1,89 @@
+1. Frontend (React)
+
+-> Páginas:
+
+Página de Login:
+
+-Interface para login (usuário e senha).
+-Autenticação via API /api/login.
+-Redirecionamento para a página do Cardápio ou Gerenciamento do Cardápio, dependendo do tipo de usuário.
+
+Página do Cardápio:
+
+-Exibe todos os itens do cardápio (/api/cardapio).
+-Permite buscar itens por nome.
+-Permite adicionar itens ao carrinho.
+-Implementação da gamificação, por exemplo: mostrar os pontos do cliente.
+
+Página de Gerenciamento do Cardápio (para Administradores):
+
+-Exibe todos os itens do cardápio.
+-Permite adicionar, remover e editar itens do cardápio.
+-Utiliza autenticação de administrador.
+
+Página do Carrinho de Compras:
+
+-Mostra todos os itens no carrinho (/api/carrinho).
+-Permite adicionar, remover e editar itens no carrinho.
+-Mostra total de itens e total de faz-me-rir no carrinho.
+-Permite fazer pedidos (/api/pedidos).
+
+Página de Pedidos (para Administradores):
+
+-Mostra todos os pedidos (/api/pedidos).
+-Permite alterar status dos pedidos (pendente, em andamento, concluído).
+
+Página de Conta do Cliente:
+
+-Mostra informações da conta.
+-Permite editar informações da conta.
+-Permite excluir a conta.
+
+-- Componentes:
+
+Componente de Item do Cardápio:
+
+-Exibe detalhes de um item do cardápio.
+-Botão para adicionar ao carrinho.
+
+Componente de Carrinho de Compras:
+
+-Lista todos os itens no carrinho.
+-Botões para adicionar, remover e excluir itens.
+
+
+2. Backend (Node.js)
+-> Rotas:
+
+/api/login:
+Autenticação de usuários (cliente e administrador).
+
+/api/cardapio:
+-Leitura do cardápio para clientes.
+-Operações CRUD para administradores.
+
+/api/carrinho:
+-Operações de carrinho para clientes.
+
+/api/pedidos:
+-Operações de pedidos para administradores.
+
+/api/cliente:
+-Operações de conta para clientes.
+
+--Middleware:
+Middleware de Autenticação:
+-Verifica se o usuário está autenticado antes de acessar certas rotas.
+
+--Conexão com o MongoDB:
+Coleções:
+-usuarios, cardapio, carrinho, pedidos.
+
+3. Banco de Dados (MongoDB)
+
+->Coleções:
+
+-usuarios: armazena informações de login.
+-cardapio: armazena itens do cardápio.
+-carrinho: armazena itens no carrinho de compras.
+-pedidos: armazena informações sobre os pedidos.

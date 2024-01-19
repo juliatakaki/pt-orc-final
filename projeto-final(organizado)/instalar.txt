@@ -1,0 +1,14 @@
+BACKEND
+npm install
+npm install -g nodemon
+npm install mongoose
+npm install express cors
+npm install dotenv
+npm install mongodb
+para rodar: npm run dev
+
+FRONTEND
+npm install
+npm install axios
+para rodar: npm run dev
+
